@@ -1,55 +1,84 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../style.css">     
+    <link rel="stylesheet" href="../style.css">
     <title>Лёгкая комбинированная куртка</title>
 </head>
+
 <body class="page">
     <header class="header">
-            <img class="header__logo" src="../img/logo-azza-16.svg" alt="Azza" width="32">
-            <ul class="menu header__menu">
-                <li class="menu__item"><a class="menu__link" href="../index.html">Главная</a></li>
-                <li class="menu__item"><a class="menu__link" href="index.html">Каталог</a></li>
-                <li class="menu__item"><a class="menu__link" href="../contacts.html">Контакты</a></li>
-            </ul>
-            <hr class="hr">
-        </header>
-    <main>
-        <h1>Лёгкая комбинированная куртка</h1>
-        <p>
-            <del>2,999 РУБ.</del>
-            <strong>1,990 РУБ.</strong>
-        </p>
-        <h3>Выберите размер</h3>
-        <ul class="item__size-selector size-selector">
-            <li>
-                <input type="radio" name="size" value="xs" id="xs">
-                <label for="xs">XS</label>
-                
-            </li>
-            <li>
-                <input type="radio" name="size" value="s" id="s">                
-                <label for="s">S</label>
-    
-            </li>
-            <li>
-                <input type="radio" name="size" value="m" id="m" checked>                
-                <label for="m">M</label>
+        <div class="container">
+            <div class="row row-padded">
+                <img class="header__logo" src="../img/logo-azza-16.svg" alt="Azza" width="32">
+                <ul class="menu header__menu">
+                    <li class="menu__item">
+                        <a class="menu__link" href="../index.html">Главная</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="index.html">Каталог</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="../contacts.html">Контакты</a>
+                    </li>
+                </ul>
+            </div>
 
-            </li>
-            <li>
-                <input type="radio" name="size" value="l" id="l">                
-                <label for="l">L</label>
+            <hr class="hr header__hr">
+        </div>
+    </header>
+    <main class="container">
+        <div class="row">
+            <div class="col-6">
+                <a href="../img/lite_jacket.jpg" target="_blank">
+                    <img class="item__image" src="../img/lite_jacket.jpg" alt="Лёгкая комбинированная куртка" width="300">
+                </a>
+            </div>
+            <div class="col-6">
+                <h1>Лёгкая комбинированная куртка</h1>
+                <p>
+                    <del>2,999 РУБ.</del>
+                    <strong>1,990 РУБ.</strong>
+                </p>
+                <h3 class="item__subtitle">Описание товара</h3>
+                <p class="item__description">Куртка с воротником-стойкой, объемными длинными рукавами, эластичными манжетами, передними карманами с кнопками,
+                    низом из комбинированной ткани в полоску и застежкой на металлическую молнию спереди.
+                </p>
+                <h3>Выберите размер</h3>
+                <ul class="item__size-selector size-selector">
+                    <li>
+                        <input type="radio" name="size" value="xs" id="xs">
+                        <label for="xs">XS</label>
 
-            </li>
-        </ul>
-        
-        <a href="../img/lite_jacket.jpg" target="_blank"><img class="item__image" src="../img/lite_jacket.jpg" alt="Лёгкая комбинированная куртка" width="300"></a>
-        <h3 class="item__subtitle">Описание товара</h3>
-        <p class="item__description">Куртка с воротником-стойкой, объемными длинными рукавами, эластичными манжетами, передними карманами с кнопками, низом из комбинированной ткани в полоску и застежкой на металлическую молнию спереди.</p>
+                    </li>
+                    <li>
+                        <input type="radio" name="size" value="s" id="s">
+                        <label for="s">S</label>
+
+                    </li>
+                    <li>
+                        <input type="radio" name="size" value="m" id="m" checked>
+                        <label for="m">M</label>
+
+                    </li>
+                    <li>
+                        <input type="radio" name="size" value="l" id="l">
+                        <label for="l">L</label>
+
+                    </li>
+                </ul>
+
+                <button type="button" class="btn item__add-btn">Добавить в корзину</button>
+            </div>
+        </div>
+
+
+
+
+
         <h3 class="item__subtitle">Дополнительно</h3>
         <table class="item-table">
             <tr>
@@ -77,14 +106,17 @@
             </tr>
             <tr>
                 <td colspan="2" class="item-table__underline">Гладить при макс. 110&deg;</td>
-            </tr>                        
+            </tr>
         </table>
-        <button type="button"  class="btn item__add-btn">Добавить в корзину</button>
     </main>
     <footer class="footer">
-        <hr class="hr">
-        <p class="footer__text">Azza, Все права защищены &copy;, 2018</p>
-        
+        <div class="container">
+            <hr class="hr footer__hr">
+            <p class="footer__text">Azza, Все права защищены &copy;, 2018</p>
+        </div>
+
+
     </footer>
 </body>
+
 </html>

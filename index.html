@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,30 +8,40 @@
     <link rel="stylesheet" href="style.css">
     <title>Главная</title>
 </head>
+
 <body class="page">
-<header class="header">
-        <img class="header__logo" src="img/logo-azza-16.svg" alt="Azza" width="32">
-        <ul class="menu header__menu">
-            <li class="menu__item">
-                <a class="menu__link" href="#">Главная</a>
-            </li>
-            <li class="menu__item">
-                <a class="menu__link" href="catalog/index.html">Каталог</a>
-            </li>
-            <li class="menu__item">
-                <a class="menu__link" href="contacts.html">Контакты</a>
-            </li>
-        </ul>
-        <hr class="hr">
+    <header class="header">
+        <div class="container">
+            <div class="row row-padded">
+                <img class="header__logo" src="img/logo-azza-16.svg" alt="Azza" width="32">
+                <ul class="menu header__menu">
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Главная</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="catalog/index.html">Каталог</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="contacts.html">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+
+            <hr class="hr header__hr">
+        </div>
     </header>
-    <main>
+    <main class="fix-collapse container">
         <h1>Azza — модный бренд одежды</h1>
         <p>Распродажа онлайн и в магазинах! #azzasale #azzarussia</p>
     </main>
     <footer class="footer">
-        <hr class="hr">
-        <p class="footer__text">Azza, Все права защищены &copy;, 2018</p>
-        
+        <div class="container">
+            <hr class="hr footer__hr">
+            <p class="footer__text">Azza, Все права защищены &copy;, 2018</p>
+        </div>
+
+
     </footer>
 </body>
+
 </html>

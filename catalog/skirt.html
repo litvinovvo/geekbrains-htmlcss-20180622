@@ -1,94 +1,117 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../style.css">     
+    <link rel="stylesheet" href="../style.css">
     <title>Юбка из трикотажа</title>
 </head>
+
 <body class="page">
-<header class="header">
-        <img class="header__logo" src="../img/logo-azza-16.svg" alt="Azza" width="32">
-        <ul class="menu header__menu">
-            <li class="menu__item">
-                <a class="menu__link" href="../index.html">Главная</a>
-            </li>
-            <li class="menu__item">
-                <a class="menu__link" href="index.html">Каталог</a>
-            </li>
-            <li class="menu__item">
-                <a class="menu__link" href="../contacts.html">Контакты</a>
-            </li>
-        </ul>
-        <hr class="hr">
+    <header class="header">
+        <div class="container">
+            <div class="row row-padded">
+                <img class="header__logo" src="../img/logo-azza-16.svg" alt="Azza" width="32">
+                <ul class="menu header__menu">
+                    <li class="menu__item">
+                        <a class="menu__link" href="../index.html">Главная</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="index.html">Каталог</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="../contacts.html">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+
+            <hr class="hr header__hr">
+        </div>
     </header>
+    <main class="container">
+        <div class="row">
+            <div class="col-6">
+                <a href="../img/ribbed_skirt.jpg" target="_blank">
+                    <img class="item__image" src="../img/ribbed_skirt.jpg" alt="Лёгкая комбинированная куртка" width="300">
+                </a>
+            </div>
+            <div class="col-6">
+                <h1>Юбка из трикотажа</h1>
+                <p>
+                    <del>3,999 РУБ.</del>
+                    <strong>2,990 РУБ.</strong>
+                </p>
+                <h3 class="item__subtitle">Описание товара</h3>
+                <p class="item__description">Юбка из трикотажа в рубчик с разрезом спереди. А-силуэт и эластичная талия. Длина изделия размера M составляет
+                    81 см
+                </p>
+                <h3>Выберите размер</h3>
+                <ul class="item__size-selector size-selector">
+                    <li>
+                        <input type="radio" name="size" value="xs" id="xs">
+                        <label for="xs">XS</label>
 
-    <main>
-        <h1>Юбка из трикотажа</h1>
-        <p>
-            <del>5,999 РУБ.</del>
-            <strong>3,990 РУБ.</strong>
-        </p>
-        <h3>Выберите размер</h3>
-        <ul class="item__size-selector size-selector">
-            <li>
-                <input type="radio" name="size" value="xs" id="xs">
-                <label for="xs">XS</label>
-                
-            </li>
-            <li>
-                <input type="radio" name="size" value="s" id="s">                
-                <label for="s">S</label>
-    
-            </li>
-            <li>
-                <input type="radio" name="size" value="m" id="m" checked>                
-                <label for="m">M</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="size" value="s" id="s">
+                        <label for="s">S</label>
 
-            </li>
-            <li>
-                <input type="radio" name="size" value="l" id="l">                
-                <label for="l">L</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="size" value="m" id="m" checked>
+                        <label for="m">M</label>
 
-            </li>
-        </ul>
-        
-        <a href="../img/ribbed_skirt.jpg" target="_blank">
-            <img src="../img/ribbed_skirt.jpg" class="item__image" alt="Юбка из трикотажа" width="300">
-        </a>
-        <h3 class="item__subtitle">Описание товара</h3>
-        <p class="item__description">Юбка из трикотажа в рубчик с разрезом спереди. А-силуэт и эластичная талия. Длина изделия размера M составляет 81 см</p>
+                    </li>
+                    <li>
+                        <input type="radio" name="size" value="l" id="l">
+                        <label for="l">L</label>
+
+                    </li>
+                </ul>
+
+                <button type="button" class="btn item__add-btn">Добавить в корзину</button>
+            </div>
+        </div>
+
+
+        <h3 class="item__subtitle">Дополнительно</h3>
         <table class="item-table">
-                <tr>
-                    <th colspan="3">Состав и уход</th>
-                </tr>
-                <tr>
-                    <td class="item-table__vertical" rowspan="2">Состав</td>
-                    <td class="item-table__underline">Внешняя часть</td>
-                    <td class="item-table__underline">70% вискоза, 30% нейлон</td>
-                </tr>
-                <tr>
-                    <td class="item-table__underline">Дополнительная ткань</td>
-                    <td class="item-table__underline">100% хлопок</td>
-                </tr>
-                <tr>
-                    <td rowspan="3" class="item-table__vertical">Уход</td>
-                    <td colspan="2" class="item-table__underline">Машинная стирка при 30&deg;, короткий отжим</td>
-                </tr>
-                <tr>
-                    <td colspan="2" class="item-table__underline">Не отбеливать, не использовать химчистку</td>
-                </tr>
-                <tr>
-                    <td colspan="2" class="item-table__underline">Гладить при макс. 110&deg;</td>
-                </tr>                        
-            </table>
-            <button type="button"  class="btn item__add-btn">Добавить в корзину</button>
+            <tr>
+                <th colspan="3">Состав и уход</th>
+            </tr>
+            <tr>
+                <td class="item-table__vertical" rowspan="2">Состав</td>
+                <td class="item-table__underline">Внешняя часть</td>
+                <td class="item-table__underline">70% вискоза, 30% нейлон</td>
+            </tr>
+            <tr>
+                <td class="item-table__underline">Дополнительная ткань</td>
+                <td class="item-table__underline">100% хлопок</td>
+            </tr>
+            <tr>
+                <td rowspan="3" class="item-table__vertical">Уход</td>
+                <td colspan="2" class="item-table__underline">Машинная стирка при 30&deg;, короткий отжим</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="item-table__underline">Не отбеливать, не использовать химчистку</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="item-table__underline">Гладить при макс. 110&deg;</td>
+            </tr>
+        </table>
     </main>
     <footer class="footer">
-        <hr class="hr">
-        <p class="footer__text">Azza, Все права защищены &copy;, 2018</p>
-        
+        <div class="container">
+            <hr class="hr footer__hr">
+            <p class="footer__text">Azza, Все права защищены &copy;, 2018</p>
+        </div>
+
+
     </footer>
+
+
 </body>
+
 </html>
